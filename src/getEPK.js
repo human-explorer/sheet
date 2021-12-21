@@ -570,10 +570,10 @@ class GetEPK extends Component{
 
                                 <div class="col-12">
 
-                                <div class={this.state.visEn+" row d-flex sm-flex align-items-start border border-2 border-dark"}> 
+                                <div class={this.state.visEn+" row d-flex sm-flex align-items-start border border-2 border-secondary"}> 
                                     <div class="col-4 row">
-                                        <div class="col-1"></div>
-                                        <div class="col-11 mt-3 ml-0 pl-0">
+                                        <div class="col-2"></div>
+                                        <div class="col-10 mt-3 ml-0 pl-0">
                                             <p class="getEternalHeader"><b>USD / EPK</b> -{'>'} <span class="text-primary">{parseFloat(this.state.epkPrice).toFixed(4)}</span></p>
                                         </div>
                                     </div>
@@ -598,7 +598,7 @@ class GetEPK extends Component{
                         </div>
                         {/* Mobile View */}
                         <div class="d-xs-block d-sm-none px-0 mx-0">
-                            <div class="row d-flex sm-flex align-items-start border border-2 border-dark"> 
+                            <div class="row d-flex sm-flex align-items-start border border-2 border-secondary"> 
                                 <p class="col-4 getEternalHeaderM mt-3"> <b>USD/EPK</b>:<br/>  <span class="text-primary">{parseFloat(this.state.epkPrice).toFixed(2)}</span></p>
                                 <p class="col-4 getEternalHeaderM mt-3"> <b>Contract 7d: </b><br/> <span class="text-primary">{this.getContractCost()} EPK</span> </p>
                                 <p class="col-4 getEternalHeaderM mt-3"> <b>Minting</b>: <br/><span class="text-primary">{parseFloat(20/this.state.epkPrice).toFixed(4)} EPK</span> </p>
@@ -752,20 +752,20 @@ class GetEPK extends Component{
                         <div id="fleet" class={this.state.visibilityFleet + " overflow"}>
 
                             <table>
-                                <tr class={this.state.visEn+" border border-dark"}>
-                                    <th class="border border-2 border-dark">#</th>
-                                    <th class="border extra-padding border-2 border-dark">Era</th>
-                                    <th class="border border-2 border-dark">SP</th>
-                                    <th class="border border-2 border-dark">Multiplier</th>
-                                    <th class="border border-2 border-dark">Travel Reward (EPK)</th>
-                                    <th class="border border-2 border-dark">Travel Reward ({this.state.currency})</th>
-                                    <th class="border border-2 border-dark">Food Cost ({this.state.currency})</th>
-                                    <th class="border border-2 border-dark">Success Rate (SR)</th>
-                                    <th class="border border-2 border-dark">{this.state.selectDays}d Reward ({this.state.currency}) * SR</th>
-                                    <th class="border border-2 border-dark">Contract / {this.state.selectDays}d (EPK)</th>
-                                    <th class="border border-2 border-dark">Contract / {this.state.selectDays}d ({this.state.currency})</th>
-                                    <th class="border border-2 border-dark">Net Profit / {this.state.selectDays}d</th>
-                                    <th class="border border-2 border-dark">Net Profit - Food / {this.state.selectDays}d</th>
+                                <tr class={this.state.visEn+" border border-secondary"}>
+                                    <th class="border border-2 border-secondary">#</th>
+                                    <th class="border extra-padding border-2 border-secondary">Era</th>
+                                    <th class="border border-2 border-secondary">SP</th>
+                                    <th class="border border-2 border-secondary">Multiplier</th>
+                                    <th class="border border-2 border-secondary">Travel Reward (EPK)</th>
+                                    <th class="border border-2 border-secondary">Travel Reward ({this.state.currency})</th>
+                                    <th class="border border-2 border-secondary">Food Cost ({this.state.currency})</th>
+                                    <th class="border border-2 border-secondary">Success Rate (SR)</th>
+                                    <th class="border border-2 border-secondary">{this.state.selectDays}d Reward ({this.state.currency}) * SR</th>
+                                    <th class="border border-2 border-secondary">Contract / {this.state.selectDays}d (EPK)</th>
+                                    <th class="border border-2 border-secondary">Contract / {this.state.selectDays}d ({this.state.currency})</th>
+                                    <th class="border border-2 border-secondary">Net Profit / {this.state.selectDays}d</th>
+                                    <th class="border border-2 border-secondary">Net Profit - Food / {this.state.selectDays}d</th>
                                 </tr>
                                 
                                 {/* Fleet */}
